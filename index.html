@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satellite Flyover</title>
+  <!-- Anitha: Added Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Anitha: Added Nav Bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Satellite Flyover</a>
+    </div>
+  </nav>
+  <!-- Anitha: Added application main section -->
+  <main class="main">
+    <!-- Anitha: Added section to display current location and city -->
+    <section class="container container-size">
+      <div class="row">
+        <div class="col s12 m3">
+          <button class="waves-effect waves-light btn-large" id="current-location">
+            <i class="material-icons left">my_location</i>Current Location
+          </button>
+        </div>
+        <div class="col s12 m9">
+          <div class="container container-size">
+            <div class="row mb-0">
+              <div class="col s12">
+                <p class="mb-0" id="current-city"></p>
+              </div>
+            </div>
+            <div class="row mb-0">
+              <div class="col s6">
+                <p class="mb-0" id="lat"></p>
+              </div>
+              <div class="col s6">
+                <p class="mb-0" id="lon"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <div class="container satellite-info container-size">
+      <div class="row">
+        <div class="col form-col offset-s4 s4 testcls " id="offset">
+          <!-- Anitha: Added form section -->
+          <form>
+            <div class="input-field">
+              <input id="city" type="text" class="validate">
+              <label for="city">Enter the City</label>
+            </div>
+            <p id="error-message">Please enter city name</p>
+            <div class="input-field">
+              <select id="satellite-category">
+                <option value="1" selected>Brightest</option>
+                <option value="2">ISS</option>
+                <option value="52">Starlink</option>
+                <option value="15">Iridium</option>
+                <option value="17">Globalstar</option>
+                <option value="26">Space & Earth Science</option>
+              </select>
+              <label for="satellite-category">Satellite Category</label>
+            </div>
+            <button id="submitBtn" class="btn waves-effect waves-light">
+              Submit<i class="material-icons right">send</i>
+            </button>
+          </form>
+          <!-- //TODO tim tanner, make this a prepending list, with a max of 5? 10? -->
+          <div id="past-cities"></div>
+        </div>
+        <!-- Anitha: Added card section -->
+        <div class="col m9 output-col container satellite-tabs">
+          <div class="row">
+            <div class="col s12">
+              <div id="satList">
+                <ul class="tabs">
+                  <!-- dynamically generated list of Satellite will display here -->
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              <div class="card horizontal card-sat-info">
+                <div class="card-image">
+                  <img src="./assets/images/Satellite1.jpg" alt="Satellite-Image"/>
+                </div>
+                <div class="card-stacked">
+                  <div class="card-content">
+                    <p class="sat-info">Satellite Name: <span id="satName"></span></p>
+                    <p class="sat-info">Satellite ID: <span id="satID"></span></p>
+                    <P class="sat-info">Viewing Conditions: <span id="Conditions"></span></p>
+                    <p class="sat-info">Direction to look: <span id="Direction"></span></p>
+                    <p class="sat-info">Elevation above horizon: <span id="Elevation"></span></p>
+                  </div>
+                  <div class="card-action">
+                    <a id="link" href="" target="_blank">Link Not Found</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col s12">
+              <p id="Description">Description</p>
+            </div>
+          </div>
+       </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

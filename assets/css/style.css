@@ -1,0 +1,64 @@
+.main {
+    padding: 10px;    
+}
+.nav-wrapper {
+  background-color: #26a69a;
+}
+.container-size {
+   margin: 0px; 
+   width: 100%;
+   max-width: 100%;
+   font-size: 16px;
+   font-weight: 500; 
+   font-family:"Helvetica Neue","sans-serif";
+}
+.satellite-info .row .form-col {  
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.satListClass{
+    cursor: pointer;
+}
+.sat-info {
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.search-section {
+    height: 100%;
+}
+#past-cities {
+    margin-top: 10px;
+}
+.cityList {
+    border:slategray solid;
+    border-width: thin;
+    height: 40px;
+    margin: 1px;
+    padding-left: 2px;
+    cursor: pointer;
+    font-family:"Helvetica Neue","sans-serif";
+    font-weight: 400;
+}
+.cityList:hover {
+    background-color: #26a69a;;
+    color: #fff;
+}
+.container {
+    margin-top: 5px;  
+}
+#error-message {
+    color: red;
+    margin-bottom: 30px;
+    border: 1px solid red;
+    background-color: #ffe6e6;
+    border-radius: 5px;
+    padding: 5px;
+}
+#Description {
+  font-family:"Helvetica Neue","sans-serif";
+  line-height: 2rem;
+}
+  
