@@ -8,7 +8,7 @@ _ Tim Tanner
 _ Gene Shaver
 _ Michael Nguyen
 
-<img src='https://raw.githubusercontent.com/gshaver82/SQLEmployeeTracker/master/consoleWalkthrough1.JPG' alt=screenshot width=800>
+<img src='https://raw.githubusercontent.com/gshaver82/SatFlyover/master/assets/images/SatFlyoverProjectSite.jpg' alt=screenshot width=800>
 
 //When I use the website, I can search for satellite passing by my location
 //When I want to search for satellite, I can choose by my current location or 
