@@ -8,6 +8,8 @@ _ Tim Tanner
 _ Gene Shaver
 _ Michael Nguyen
 
+<img alt=SatelliteFlyoverScreenshot src=./images/SatFlyoverProjectSite.jpg />
+
 //When I use the website, I can search for satellite passing by my location
 //When I want to search for satellite, I can choose by my current location or 
 I can choose a city
